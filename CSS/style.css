@@ -1,0 +1,67 @@
+body {
+    background-color: rgb(200, 219, 190);
+    font-family: 'Georgia';
+    color: rgb(68, 58, 44);
+}
+
+.menu h1 {
+    text-align: center;
+    font-size: 1000%;
+    color: rgb(90, 48, 0);
+}
+
+.menu h2 {
+    padding: 2%;
+    text-align: center;
+    background-color: rgb(159, 135, 114);
+    font-family: 'Arizonia';
+    font-size: 400%;
+    color: rgb(237, 228, 224);
+    margin-bottom: -15px;
+}
+
+.menu section {
+    margin: 10%;
+    background-color: rgb(237, 228, 224);
+}
+
+.menu dl {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+    border-width: 3px;
+    border-color: rgb(90, 43, 0);
+}
+
+.menu .prix {
+    color: rgb(68, 58, 44);
+    font-size: 150%;
+}
+
+.menu .nomProduit {
+    color: rgb(68, 58, 44);
+    font-family: 'Great Vibes', cursive;
+    font-size: 170%;
+}
+
+.menu .descProduit {
+    font-family: system-ui;
+    font-size: small;
+}
+
+dt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+dd {
+    margin-top: -20px;
+    margin-bottom: 1%;
+}
+
+.nomRegle {
+    color: rgb(68, 58, 44);
+    font-family: 'Georgia';
+    font-size: xx-large;
+}
