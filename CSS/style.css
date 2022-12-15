@@ -1,13 +1,38 @@
 body {
-    background-color: rgb(200, 219, 190);
     font-family: 'Georgia';
     color: rgb(68, 58, 44);
+    background-image : url(../assets/background.jpg);
+    background-repeat : no-repeat;
+    background-size: cover;
+    background-color: rgb(200, 219, 190);
 }
 
-.menu h1 {
+h1{
     text-align: center;
-    font-size: 1000%;
-    color: rgb(90, 48, 0);
+    font-size: 600%;
+    background-color: rgba(200, 219, 190, 0.7);
+    color: rgb(68, 58, 44, 0.9);
+    padding: 0;
+    border: 5px solid rgb(68, 58, 44);
+}
+
+.images {
+    width: 100%;
+    table-layout: auto;
+    border: 3px solid rgb(68, 58, 44);
+    background-color: rgba(200, 219, 190, 0.7);
+    overflow : hidden;
+}
+
+.images p {
+    text-align: center;
+    font-size: xx-large;
+    font-family: 'Arizonia';
+}
+
+.images img {
+    object-fit: cover;
+    border: 5px solid rgb(68, 58, 44);
 }
 
 .menu h2 {
@@ -64,4 +89,75 @@ dd {
     color: rgb(68, 58, 44);
     font-family: 'Georgia';
     font-size: xx-large;
+}
+
+header {
+    background-color: rgb(68, 58, 44);
+    margin: -10px;
+    color: rgb(237, 228, 224);
+    list-style-type: none;
+}
+
+header img {
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+#titre-header {
+    font-size: 150%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    color: rgb(237, 228, 224);
+    background-color: rgb(68, 58, 44);
+}
+
+#menu-accordeon {
+    display: inline-block;
+    vertical-align: middle;
+    align-self: flex-end;
+    position: absolute;
+    right: 15px;
+}
+
+#menu-accordeon {
+    display: inline-block;
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul ul {
+    right: 0;
+}
+
+#menu-accordeon li li {
+    max-height:0;
+    overflow: hidden;
+    transition: all .5s;
+    background: rgb(68, 58, 44);
+}
+
+#menu-accordeon a {
+    display: block;
+    text-decoration: none;
+    color: rgb(237, 228, 224);
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+#menu-accordeon li:hover li {
+    max-height: 15em;
+}
+
+#menu-accordeon li ul {
+    position: absolute;
+}
+
+.lien-deroulant {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#anchor {
+    background: rgb(68, 58, 44);
 }
