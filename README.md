@@ -1,5 +1,6 @@
 # projetDevWeb
 
-#Projet Developpement Web#
+Création d'un site internet
 
-Création d'un site internet 
+> Gabriel Rouge et Mathieu Leroux 
+> Groupe 4
