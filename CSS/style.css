@@ -10,29 +10,31 @@ body {
 h1 {
     text-align: center;
     font-size: 600%;
-    background-color: rgba(200, 219, 190, 0.7);
+    background-color: rgba(200, 219, 190, 0.9);
     color: rgb(68, 58, 44, 0.9);
     padding: 0;
     border: 5px solid rgb(68, 58, 44);
 }
 
-.images {
+.table-image {
     width: 100%;
     table-layout: auto;
     border: 3px solid rgb(68, 58, 44);
     background-color: rgba(200, 219, 190, 0.7);
     overflow: hidden;
-}
-
-.images p {
     text-align: center;
     font-size: xx-large;
     font-family: 'Arizonia';
 }
 
-.images img {
+.table-image img {
     object-fit: cover;
     border: 5px solid rgb(68, 58, 44);
+}
+
+.menu section {
+    margin: 10%;
+    background-color: rgb(237, 228, 224);
 }
 
 .menu h2 {
@@ -45,11 +47,6 @@ h1 {
     margin-bottom: -15px;
 }
 
-.menu section {
-    margin: 10%;
-    background-color: rgb(237, 228, 224);
-}
-
 .menu dl {
     padding-left: 20px;
     padding-right: 20px;
@@ -59,12 +56,10 @@ h1 {
 }
 
 .menu .prix {
-    color: rgb(68, 58, 44);
     font-size: 150%;
 }
 
 .menu .nomProduit {
-    color: rgb(68, 58, 44);
     font-family: 'Great Vibes', cursive;
     font-size: 170%;
 }
@@ -86,7 +81,6 @@ dd {
 }
 
 .nomRegle {
-    color: rgb(68, 58, 44);
     font-family: 'Georgia';
     font-size: xx-large;
 }
@@ -103,7 +97,7 @@ header img {
     padding-left: 10px;
 }
 
-#titre-header {
+header nav h1 {
     font-size: 150%;
     display: inline-block;
     vertical-align: middle;
@@ -118,16 +112,8 @@ header img {
     align-self: flex-end;
     position: absolute;
     right: 15px;
-}
-
-#menu-accordeon {
-    display: inline-block;
     list-style: none;
     text-align: center;
-}
-
-header nav ul ul {
-    right: 0;
 }
 
 #menu-accordeon li li {
@@ -141,23 +127,32 @@ header nav ul ul {
     display: block;
     text-decoration: none;
     color: rgb(237, 228, 224);
-    padding-top: 8px;
-    padding-bottom: 8px;
+    padding: 8px;
 }
 
 #menu-accordeon li:hover li {
     max-height: 15em;
 }
 
-#menu-accordeon li ul {
-    position: absolute;
+#menu-accordeon li img {
+    padding-left: 50%;
+    padding-top: 5%;
 }
+
+/* #menu-accordeon li ul {
+    position: absolute;
+} */
 
 .lien-deroulant {
     padding-left: 10px;
     padding-right: 10px;
 }
 
-#anchor {
+footer {
     background: rgb(68, 58, 44);
+}
+
+article {
+    background-color: rgba(237, 228, 224, 0.9);
+    padding: 1%;
 }
