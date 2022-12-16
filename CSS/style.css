@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(200, 219, 190);
+    margin: 0;
 }
 
 h1 {
@@ -51,8 +52,6 @@ h1 {
     padding-left: 20px;
     padding-right: 20px;
     padding-bottom: 15px;
-    border-width: 3px;
-    border-color: rgb(90, 43, 0);
 }
 
 .menu .prix {
@@ -62,11 +61,6 @@ h1 {
 .menu .nomProduit {
     font-family: 'Great Vibes', cursive;
     font-size: 170%;
-}
-
-.menu .descProduit {
-    font-family: system-ui;
-    font-size: small;
 }
 
 dt {
@@ -94,7 +88,7 @@ header {
 
 header img {
     vertical-align: middle;
-    padding-left: 10px;
+    padding-left: 2%;
 }
 
 header nav h1 {
@@ -150,7 +144,20 @@ header nav h1 {
 
 footer {
     background: rgb(68, 58, 44);
+    color: rgb(237, 228, 224);
+    height: 75px;
+    bottom: 0;
+    position: relative;
+    display: flex;
+    align-items: center;
 }
+
+footer>* {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
 
 article {
     background-color: rgba(237, 228, 224, 0.9);
