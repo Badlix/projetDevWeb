@@ -132,10 +132,6 @@ header nav h1 {
     padding-top: 5%;
 }
 
-/* #menu-accordeon li ul {
-    position: absolute;
-} */
-
 .lien-deroulant {
     padding-left: 10px;
     padding-right: 10px;
@@ -157,9 +153,59 @@ footer>* {
     padding-right: 1%;
 }
 
-
-
 article {
     background-color: rgba(237, 228, 224, 0.9);
     padding: 1%;
+}
+
+#form {
+    background-color: rgba(237, 228, 224, 0.9);
+    width: fit-content;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+#form>* {
+    margin: 1%;
+}
+
+textarea {
+    display: block;
+    /* margin-top: 1%;
+    margin-bottom: 1%; */
+}
+
+
+.score {
+    display: flex;
+    justify-content: right;
+    transform: rotate(180deg);
+    /*need roatation because the system of ratings is reverse because of the reading direction of css
+    ex : if i click on the 3rd star, i will not be able to modify the 1st and the 2nd 
+    because css can't read backward*/
+}
+
+/*Hide the default design of radio buttons*/
+.score>input {
+    display: none;
+}
+
+.score>label {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-image: url("../assets/icons/starGrey.svg");
+    background-size: 100%;
+    transition: .3s;
+    transform: rotate(180deg);
+}
+
+.score>input:checked~label {
+    background-image: url("../assets/icons/starYellow.svg");
+}
+
+/*select the label under the mouse and all the label before it*/
+.score>input:not(:checked)~label:hover,
+.score>input:not(:checked)~label:hover~label {
+    background-image: url("../assets/icons/starYellow2.svg");
 }
