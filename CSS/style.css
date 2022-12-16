@@ -1,13 +1,13 @@
 body {
     font-family: 'Georgia';
     color: rgb(68, 58, 44);
-    background-image : url(../assets/background.jpg);
-    background-repeat : no-repeat;
+    background-image: url(../assets/images/background.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     background-color: rgb(200, 219, 190);
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 600%;
     background-color: rgba(200, 219, 190, 0.7);
@@ -21,7 +21,7 @@ h1{
     table-layout: auto;
     border: 3px solid rgb(68, 58, 44);
     background-color: rgba(200, 219, 190, 0.7);
-    overflow : hidden;
+    overflow: hidden;
 }
 
 .images p {
@@ -131,7 +131,7 @@ header nav ul ul {
 }
 
 #menu-accordeon li li {
-    max-height:0;
+    max-height: 0;
     overflow: hidden;
     transition: all .5s;
     background: rgb(68, 58, 44);
