@@ -16,6 +16,12 @@ h1 {
     border: 5px solid rgb(68, 58, 44);
 }
 
+#pageAvis h2 {
+    background-color: rgba(237, 228, 224, 0.9);
+    width: fit-content;
+    text-decoration: underline;
+}
+
 .desc {
     background-color: rgba(68, 58, 44, 0.9);
     height: 15%;
@@ -198,8 +204,6 @@ article {
 
 textarea {
     display: block;
-    /* margin-top: 1%;
-    margin-bottom: 1%; */
 }
 
 
@@ -242,6 +246,18 @@ textarea {
     border: 1px solid rgb(68, 58, 44);
 }
 
-.avisClients td {
-    background-color: 3px rgba(200, 219, 190, 0.9);
+.nomClient {
+    font-weight: bold;
+}
+
+.nomClient img {
+    padding-left: 1%;
+}
+
+figcaption {
+    padding-left: 85%;
+    font-size: small;
+    font-style: italic;
+    padding-bottom: 2%;
+    border-bottom: 1px solid rgb(68, 58, 44);
 }
