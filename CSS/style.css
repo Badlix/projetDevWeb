@@ -4,6 +4,8 @@ body {
     background-image: url(../assets/images/background.jpg);
     background-repeat: no-repeat;
     background-color: rgb(200, 219, 190);
+    background-size: cover;
+    height: 100vh;
 }
 
 index:body {
@@ -26,15 +28,6 @@ h1 {
     width: 100%;
 }
 
-/* .images p {
-    width: 100%;
-    background-color: rgba(237, 228, 224, 0.7);
-    border: 1px solid rgba(68, 58, 44);
-    font-size: 400%;
-    text-align: center;
-    font-family: 'Arizonia';
-} */
-
 .images td {
     padding: 1%;
     width: 30%;
@@ -43,8 +36,6 @@ h1 {
 .images img {
     width: 100%;
     height: 100%;
-    /* resize: auto;
-    object-fit: cover; */
     border: 5px solid rgb(68, 58, 44);
 }
 
