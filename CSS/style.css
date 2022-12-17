@@ -5,11 +5,6 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(200, 219, 190);
     background-size: cover;
-    height: 100vh;
-}
-
-index:body {
-    background-color: rgb(68, 58, 44);
 }
 
 h1 {
@@ -21,30 +16,36 @@ h1 {
     border: 5px solid rgb(68, 58, 44);
 }
 
+.desc {
+    position: absolute;
+    background-color: aqua;
+    width: 100%;
+    top: 0;
+}
+
 .images {
     align-items: center;
     background-color: rgba(200, 219, 190, 0.7);
     border: 5px solid rgb(68, 58, 44);
     width: 100%;
+    padding: 1%;
 }
 
 .images td {
-    padding: 1%;
-    width: 30%;
+    justify-content: center;
+    width: 25%;
+    padding: 2%;
 }
 
 .images img {
-    width: 100%;
-    height: 100%;
+    width: 95%;
+    height: 95%;
     border: 5px solid rgb(68, 58, 44);
+    position: relative;
 }
 
-#texte {
-    text-align: center;
-    font-family: 'Arizonia';
-    background-color: rgba(237, 228, 224, 0.7);
-    border: 1px solid rgba(68, 58, 44);
-    font-size: 300%;
+.images img:hover {
+    opacity: 0.8;
 }
 
 .menu section {
