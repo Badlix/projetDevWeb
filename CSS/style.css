@@ -172,6 +172,7 @@ article {
 }
 
 #form {
+    border: 1px solid rgb(68, 58, 44);
     background-color: rgba(237, 228, 224, 0.9);
     width: fit-content;
     margin-top: 2%;
@@ -221,4 +222,13 @@ textarea {
 .score>input:not(:checked)~label:hover,
 .score>input:not(:checked)~label:hover~label {
     background-image: url("../assets/icons/starYellow2.svg");
+}
+
+.avisClients {
+    background-color: rgba(237, 228, 224, 0.9);
+    border: 1px solid rgb(68, 58, 44);
+}
+
+.avisClients td {
+    background-color: 3px rgba(200, 219, 190, 0.9);
 }
