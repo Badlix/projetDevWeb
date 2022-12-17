@@ -7,7 +7,7 @@ body {
     background-color: rgb(200, 219, 190);
 }
 
-index:body{
+index:body {
     background-color: rgb(68, 58, 44);
 }
 
@@ -21,30 +21,43 @@ h1 {
 }
 
 .images {
-    table-layout: fixed;
+    /* table-layout: fixed; */
     align-items: center;
     background-color: rgba(200, 219, 190, 0.7);
     border: 5px solid rgb(68, 58, 44);
-    width: 100%;
-    display: flex;
-    flex-direction : column;
-    overflow: hidden;
+    /* width: 100%; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* overflow: hidden; */
 }
 
-.images p {
+/* .images p {
     width: 100%;
     background-color: rgba(237, 228, 224, 0.7);
     border: 1px solid rgba(68, 58, 44);
     font-size: 400%;
     text-align: center;
     font-family: 'Arizonia';
+} */
+
+.images td {
+    padding: 1%;
 }
 
 .images img {
-    max-width: 30%;
-    resize:auto;
-    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    /* resize: auto;
+    object-fit: cover; */
     border: 5px solid rgb(68, 58, 44);
+}
+
+#texte {
+    text-align: center;
+    font-family: 'Arizonia';
+    background-color: rgba(237, 228, 224, 0.7);
+    border: 1px solid rgba(68, 58, 44);
+    font-size: 300%;
 }
 
 .menu section {
