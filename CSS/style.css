@@ -2,14 +2,11 @@ body {
     font-family: 'Georgia';
     color: rgb(68, 58, 44);
     background-image: url(../assets/images/background.jpg);
+    height: 100%;
     background-repeat: no-repeat;
-    background-color: rgb(200, 219, 190);
+    background-color: rgb(68, 58, 44);
     background-size: cover;
     height: 100vh;
-}
-
-index:body {
-    background-color: rgb(68, 58, 44);
 }
 
 h1 {
@@ -171,6 +168,7 @@ footer>* {
 article {
     background-color: rgba(237, 228, 224, 0.9);
     padding: 1%;
+    border: 5px solid rgb(68, 58, 44);
 }
 
 #form {
