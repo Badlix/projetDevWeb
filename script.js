@@ -22,7 +22,7 @@ function switchTo(sheet) {
 // }
 
 function sendEmail() {
-    document.getElementById('form').action = "mailto:alice.leroux@gmail.com?subject=Avis";
+    location.href = "mailto:alice.leroux@gmail.com?subject=Avis";
 }
 function temp() {
     document.getElementById('form1').action = "mailto:alice.leroux@gmail.com?subject=Avissss";
