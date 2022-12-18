@@ -5,12 +5,12 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(200, 219, 190);
     background-size: cover;
-    font-size: 100%;
+    font-size: 70%;
 }
 
 h1 {
     text-align: center;
-    font-size: 600%;
+    font-size: 400%;
     background-color: rgba(200, 219, 190, 0.9);
     color: rgb(68, 58, 44, 0.9);
     padding: 0;
@@ -83,12 +83,18 @@ h1 {
 }
 
 .menu .prix {
-    font-size: 170%;
+    padding-top: 2%;
+    font-size: x-large;
 }
 
 .menu .nomProduit {
     font-family: 'Great Vibes', cursive;
-    font-size: 200%;
+    /* font-family: system-ui; */
+    font-size: xx-large;
+}
+
+.menu .descProduit {
+    font-size: medium;
 }
 
 dt {
@@ -262,4 +268,11 @@ figcaption {
     font-style: italic;
     padding-bottom: 2%;
     border-bottom: 1px solid rgb(68, 58, 44);
+}
+
+/* Pour quand on est sur mobile*/
+@media only screen and (hover: none) and (pointer: coarse) {
+    .menu .descProduit {
+        font-size: 65%;
+    }
 }

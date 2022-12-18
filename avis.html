@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style1.css">
     <link rel="icon" href="assets/icons/favicon.ico">
-    <link rel="script" href="javascript/script.js">
 </head>
 
 <body id="pageAvis">
@@ -51,6 +50,15 @@
             id="commentaire"></textarea>
         <a id="jsp">Envoyer</a>
     </form>
+    <script>
+        function updateEmail(form) {
+            sujet = "Avis : " + form.prenom.value + " " + form.nom.value;
+            texte = form.commentaire.value;
+            complet = "mailto:moncafefrancais.avis@gmail.com?subject=" + sujet + "&body=" + texte;
+            console.log(complet);
+            document.getElementById("jsp").href = complet;
+        }
+    </script>
     <h2>
         Avis de nos clients...
     </h2>
