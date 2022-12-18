@@ -83,13 +83,20 @@ h1 {
 
 .menu .prix,
 .menu .nomProduit {
-    font-size: 125%;
     display: inline-block;
     padding-right: 1%;
     text-shadow: #545153;
     top: 0;
 }
 
+.nomProduit {
+    font-style: italic;
+    font-size: 125%;
+}
+
+.prix {
+    font-size: 100%;
+}
 
 dt {
     display: inline;
@@ -98,11 +105,11 @@ dt {
 
 dd {
     margin-bottom: 1%;
-}   
+}
 
 .nomRegle {
-    font-size:large;
-    font-style:italic;
+    font-size: large;
+    font-style: italic;
 }
 
 ol {
@@ -110,7 +117,7 @@ ol {
 }
 
 footer {
-    background-color:rgb(208, 0, 118);
+    background-color: rgb(208, 0, 118);
 }
 
 .avisClients {
