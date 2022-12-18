@@ -2,7 +2,7 @@
 
 body {
     font-family: 'Georgia';
-    color: rgb(68, 58, 44);
+    color: rgb(69, 58, 44);
     background-image: url(../assets/images/background.jpg);
     background-repeat: no-repeat;
     background-color: rgb(68, 58, 44);
@@ -299,7 +299,7 @@ footer>* {
 
 /* Sélecteur concernant le média mobile*/
 
-@media only screen and (max-device-width : 700px) {
+@media only screen and (max-width : 700px) {
     .menu .descProduit {
         font-size: 60%;
     }
