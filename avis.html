@@ -4,8 +4,11 @@
 <head>
     <title>~ Mon Café Français ~</title>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="CSS/style1.css">
     <link rel="icon" href="assets/icons/favicon.ico">
+    <link rel="script" href="script.js">
 </head>
 
 <body id="pageAvis">
@@ -27,7 +30,7 @@
     <h2>
         Laissez nous un avis !
     </h2>
-    <form id="form" action="#" onsubmit="sendEmail()" method="post" enctype="text/plain">
+    <form id="form" onchange="updateEmail(this)">
         <p class="score">
             <input type="radio" name="score" id="score-1">
             <label for="score-1"></label>
@@ -41,13 +44,12 @@
             <label for="score-5"></label>
         </p>
         <label for="prenom">Prénom :</label>
-        <input id="prenom" type="text" name="prenom" value="">
+        <input id="prenom" type="text" name="prenom">
         <label for="nom">Nom :</label>
-        <input id="nom" type="text" name="nom" value="">
+        <input id="nom" type="text" name="nom">
         <textarea name="commentaire" rows="3" cols="60" placeholder="Laissez nous un commentaire !"
             id="commentaire"></textarea>
-        <input type="submit" value="Envoyer">
-        <a id="jsp" href="mailto:alice.leroux@gmail.com" onclick="sendEmail()">jgkvvaeferf</a> -->
+        <a id="jsp">Envoyer</a>
     </form>
     <h2>
         Avis de nos clients...

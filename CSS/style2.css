@@ -1,0 +1,76 @@
+/*palette : 
+000000
+2F4550
+586F7C
+B8DBD9
+F4F4F9
+*/
+
+body {
+    font-family: system-ui;
+    color: #F4F4F9;
+    background-color: #586F7C;
+}
+
+header {
+    background-color: #000000;
+    color: #B8DBD9;
+    list-style-type: none;
+}
+
+header img {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+header nav h1 {
+    font-size: 200%;
+    color: #B8DBD9;
+    text-align: center;
+    margin: 0;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+h1 {
+    font-size: 400%;
+    padding-left: 10%;
+    text-decoration: underline overline #B8DBD9;
+}
+
+.menu section {
+    position: relative;
+}
+
+.menu h2 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+    position: absolute;
+}
+
+/* .menu dl {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 15px;
+}
+
+.menu .prix {
+    font-size: 150%;
+}
+
+.menu .nomProduit {
+    font-family: 'Great Vibes', cursive;
+    font-size: 170%;
+}
+
+dt {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+dd {
+    margin-top: -20px;
+    margin-bottom: 1%;
+} */

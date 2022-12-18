@@ -2,29 +2,14 @@ function switchTo(sheet) {
     document.getElementById('pagestyle').setAttribute('href', sheet);
 }
 
-// function sendEmail() {
-//     var prenom = document.getElementById("prenom").value;
-//     var nom = document.getElementById("nom").value;
-//     var commentaire = document.getElementById("commentaire").value;
-//     var note = " / ";
-//     if (document.getElementById("score-5").value) {
-//         note = "5/5";
-//     } else if (document.getElementById("score-4").value) {
-//         note = "4/5";
-//     } else if (document.getElementById("score-3").value) {
-//         note = "3/5";
-//     } else if (document.getElementById("score-2").value) {
-//         note = "2/5";
-//     } else if (document.getElementById("score-1").value) {
-//         note = "1/5";
-//     }
-//     return "mailto:alice.leroux@gmail.com";
+// function getNote(form) {
+//     if (form.getElementById("score-5")).
 // }
 
-function sendEmail() {
-    // location.href = "mailto:alice.leroux@gmail.com?subject=Avis";
-    document.getElementById("jsp").setAttribute("href", "mailto:alice.leroux@gmail.com?subject=feffzffze");
-}
-function temp() {
-    document.getElementById('form1').action = "mailto:alice.leroux@gmail.com?subject=Avissss";
+function updateEmail(form) {
+    sujet = "Avis : " + form.getElementById("prenom") + " " + form.getElementById("nom");
+    texte = form.getElementById("commentaire");
+    complet = "mailto:alice.leroux@gmail.com?subject=" + sujet + "&body=" + texte;
+    console.log(complet);
+    document.getElementById("jsp").href = complet;
 }

@@ -5,6 +5,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(200, 219, 190);
     background-size: cover;
+    font-size: 100%;
 }
 
 h1 {
@@ -82,12 +83,12 @@ h1 {
 }
 
 .menu .prix {
-    font-size: 150%;
+    font-size: 170%;
 }
 
 .menu .nomProduit {
     font-family: 'Great Vibes', cursive;
-    font-size: 170%;
+    font-size: 200%;
 }
 
 dt {
@@ -111,6 +112,7 @@ header {
     margin: -10px;
     color: rgb(237, 228, 224);
     list-style-type: none;
+    font-size: 100%;
 }
 
 header img {
@@ -119,7 +121,7 @@ header img {
 }
 
 header nav h1 {
-    font-size: 150%;
+    font-size: 175%;
     display: inline-block;
     vertical-align: middle;
     padding-left: 10px;
@@ -255,8 +257,8 @@ textarea {
 }
 
 figcaption {
-    padding-left: 85%;
-    font-size: small;
+    justify-content: end;
+    font-size: 75%;
     font-style: italic;
     padding-bottom: 2%;
     border-bottom: 1px solid rgb(68, 58, 44);
