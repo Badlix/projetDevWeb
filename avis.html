@@ -4,11 +4,11 @@
 <head>
     <title>~ Mon Café Français ~</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style1.css">
     <link rel="icon" href="assets/icons/favicon.ico">
 </head>
 
-<body>
+<body id="pageAvis">
     <header>
         <nav>
             <a href="index.html"><img src="assets/icons/home.svg" width="25" height="25"></a>
@@ -24,9 +24,9 @@
             </ul>
         </nav>
     </header>
-    <h3>
+    <h2>
         Laissez nous un avis !
-    </h3>
+    </h2>
     <form id="form" action="" method="post" enctype="text/plain">
         <p class="score">
             <input type="radio" name="score" id="score-1">
@@ -52,34 +52,49 @@
         <textarea name="commentaire" rows="3" cols="60" placeholder="Laissez nous un commentaire !"></textarea>
         <input type="submit" value="Enregistrer">
     </form>
-    <h3>
+    <h2>
         Avis de nos clients...
-    </h3>
+    </h2>
     <table class="avisClients">
         <tr>
             <td>
                 <blockquote>
-                    <strong>Pierre-Jean Bhon </strong> <br>
-                    Avis : ambiance tres sympa et site internet tres ergonomique. je suis seulement tres decu par l'absence de croissant au jambon au menu. Ainsi, je suis au regret de n attribuer qu une etoile. <br>
-                    Cordialement, <br>
-                    Pierre-Jean Bhon. <br>
-                    PS : pardonnez mon ecriture, je ne parviens pas a trouver les accents sur mon clavier d ordinateur.
+                    <p class="nomClient">Pierre-Jean Bhon<img src="assets/images/uneEtoile.svg" height="15"></p>
+                    <p>Avis : ambiance tres sympa et site internet tres ergonomique. je suis seulement tres decu par
+                        l'absence de croissant au jambon au menu. Ainsi, je suis au regret de n attribuer qu une etoile.
+                        <br>
+                        Cordialement, <br>
+                        Pierre-Jean Bhon. <br>
+                        PS : pardonnez mon ecriture, je ne parviens pas a trouver les accents sur mon clavier d
+                        ordinateur.
+                    </p>
+                    <figcaption>15 Août 2021</figcaption>
                 </blockquote>
             </td>
         </tr>
         <tr>
             <td>
-                <blockquote> <br>
-                    <strong>Christina Cordula </strong> <br>
-                    Ma chérie ! Vous avez ici un condensé de tout le chic français, c'est tout à fait au-then-tique ! Les couleurs ne sont pas tout à fait en accord avec la saison, mais j'accorde quand même 5 étoiles pour l'effort donné.  ;)
+                <blockquote>
+                    <p class="nomClient">Christina Cordula<img src="assets/images/cindEtoiles.svg" height="15"></p>
+                    <p>Ma chérie ! Vous avez ici un condensé de tout le chic français, c'est tout à fait au-then-tique !
+                        Les couleurs ne sont pas tout à fait en accord avec la saison, mais j'accorde quand même 5
+                        étoiles
+                        pour l'effort donné. ;)</p>
+                    <figcaption>23 Octobre 2022</figcaption>
                 </blockquote>
             </td>
         </tr>
         <tr>
             <td>
-                <blockquote> <br>
-                    <strong>Bertrand Dupuit </strong> <br>
-                    Vous cherchez à vous faire de l'argent rapidement et facilement, avec un capital de base faible et un retour sur investissement immédiat et efficace ? Je vous apprend ma technique pour devenir millionaire sur ma chaine youtube : <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Youtube</a>
+                <blockquote>
+                    <p class="nomClient">Bertrand Dupuit<img src="assets/images/quatreEtoiles.svg" height="15"></p>
+                    <p>Vous cherchez à vous faire de l'argent rapidement et facilement, avec un capital de base faible
+                        et un retour sur investissement immédiat et efficace ? <br>
+                        Je vous apprend ma technique pour
+                        devenir millionaire sur ma chaine youtube :
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">Ma Super Chaîne</a>
+                    </p>
+                    <figcaption>1 Janvier 2026</figcaption>
                 </blockquote>
             </td>
         </tr>
