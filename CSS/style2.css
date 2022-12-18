@@ -21,7 +21,7 @@ header img {
     height: 0;
 }
 
-header header nav h1 {
+header nav h1 {
     font-size: 200%;
     color: #B8DBD9;
     text-align: center;
@@ -45,10 +45,6 @@ h1 {
     width: 100%;
     padding: 10%;
     font-size: xx-large;
-}
-
-.images p {
-    font-size: medium;
 }
 
 .images img {
@@ -102,11 +98,11 @@ dt {
 
 dd {
     margin-bottom: 1%;
-}
+}   
 
 .nomRegle {
-    font-size: large;
-    font-style: italic;
+    font-size:large;
+    font-style:italic;
 }
 
 ol {
@@ -114,7 +110,7 @@ ol {
 }
 
 footer {
-    background-color: rgb(208, 0, 118);
+    background-color:rgb(208, 0, 118);
 }
 
 .avisClients {
@@ -132,4 +128,14 @@ blockquote {
 
 img {
     padding-left: 2%;
+}
+
+form {
+    background-color: rgba(208, 0, 118, 0.2)
+}
+
+textarea {
+    resize: auto;
+    max-height: 100px;
+    max-width: 40%;
 }
