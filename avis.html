@@ -18,6 +18,7 @@
             <ul id="menu-accordeon">
                 <li><img src="assets/icons/menu.svg" width="25" height="25"></img>
                     <ul>
+                        <li class="lien-deroulant"><a href="index.html">Accueil</a></li>
                         <li class="lien-deroulant"><a href="menu.html">Menu</a></li>
                         <li class="lien-deroulant"><a href="rules.html">Règlement</a></li>
                         <li class="lien-deroulant"><a href="avis.html">Avis</a></li>
@@ -31,30 +32,39 @@
     </h2>
     <form id="form" onchange="updateEmail(this)">
         <p class="score">
-            <input type="radio" name="score" id="score-1">
+            <input type="radio" name="score" id="score-1" value="1" class="buttonScore" required>
             <label for="score-1"></label>
-            <input type="radio" name="score" id="score-2">
+            <input type="radio" name="score" id="score-2" value="2" class="buttonScore">
             <label for="score-2"></label>
-            <input type="radio" name="score" id="score-3">
+            <input type="radio" name="score" id="score-3" value="3" class="buttonScore">
             <label for="score-3"></label>
-            <input type="radio" name="score" id="score-4">
+            <input type="radio" name="score" id="score-4" value="4" class="buttonScore">
             <label for="score-4"></label>
-            <input type="radio" name="score" id="score-5">
+            <input type="radio" name="score" id="score-5" value="5" class="buttonScore">
             <label for="score-5"></label>
         </p>
         <label for="prenom">Prénom :</label>
-        <input id="prenom" type="text" name="prenom">
+        <input id="prenom" type="text" name="prenom" required="required">
         <label for="nom">Nom :</label>
-        <input id="nom" type="text" name="nom">
-        <textarea name="commentaire" rows="3" cols="60" placeholder="Laissez nous un commentaire !"
-            id="commentaire"></textarea>
+        <input id="nom" type="text" name="nom" required="required">
+        <textarea name="commentaire" rows="3" cols="60" placeholder="Laissez nous un commentaire !" id="commentaire"
+            required="required"></textarea>
+        <!-- <input id="submit" type="submit"> -->
         <a id="jsp">Envoyer</a>
     </form>
     <script>
+        function getNote(form) {
+            for (var i = 0; i < 5; ++i) {
+                if (document.getElementsByName("score")[i].checked) {
+                    return 5 - i; // nombre d'etoile - c'est inverse jsp pk
+                }
+            }
+        }
         function updateEmail(form) {
             sujet = "Avis : " + form.prenom.value + " " + form.nom.value;
             texte = form.commentaire.value;
-            complet = "mailto:moncafefrancais.avis@gmail.com?subject=" + sujet + "&body=" + texte;
+            note = "Note " + getNote(form) + "/5\n\n";
+            complet = "mailto:moncafefrancais.avis@gmail.com?subject=" + sujet + "&body=" + note + texte;
             console.log(complet);
             document.getElementById("jsp").href = complet;
         }
