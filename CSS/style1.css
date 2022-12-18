@@ -318,5 +318,7 @@ footer>* {
 
     textarea {
         width: 20em;
+        max-height: 100px;
+        max-width: 40%;
     }
 }

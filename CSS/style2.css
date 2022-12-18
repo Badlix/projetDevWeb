@@ -119,3 +119,13 @@ blockquote {
 img {
     padding-left: 2%;
 }
+
+form {
+    background-color: rgba(208, 0, 118, 0.2);
+}
+
+textarea {
+    resize: auto;
+    max-height: 100px;
+    max-width: 40%;
+}
