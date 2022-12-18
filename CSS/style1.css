@@ -23,20 +23,25 @@ h1 {
 /* Sélecteurs concernant l'index */
 
 .desc {
-    background-color: rgba(68, 58, 44, 0.9);
+    background-color: rgb(68, 58, 44);
     height: 15%;
-    width: 80%;
+    width: 79.7%;
     position: absolute;
     bottom: 0.6em;
     padding: 5%;
     color: white;
     font-family: 'Great Vibes', cursive;
+    font-size: medium;
     opacity: 0;
 }
 
 .images img:hover+.desc {
     opacity: 0.9;
     transition: all .5s;
+}
+
+.images img:hover {
+    border-bottom: 0px;
 }
 
 .images {
@@ -318,5 +323,9 @@ footer>* {
 
     textarea {
         width: 20em;
+    }
+
+    .images img:hover {
+        border: 5px solid rgb(68, 58, 44);
     }
 }
