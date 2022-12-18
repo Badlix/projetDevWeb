@@ -279,4 +279,8 @@ figcaption {
     .menu .nomProduit {
         font-size: 250%;
     }
+
+    #menu-accordeon .lien-deroulant {
+        height: 100px;
+    }
 }
