@@ -1,7 +1,4 @@
-/*palette : 
-545153
-D00076
-*/
+/* Selecteurs généraux */
 
 body {
     font-family: system-ui;
@@ -9,45 +6,13 @@ body {
     background-color: #545153;
 }
 
-header {
-    background-color: #D00076;
-    color: #B8DBD9;
-    list-style-type: none;
-}
-
-header img {
-    opacity: 0;
-    width: 0;
-    height: 0;
-}
-
-header nav #titre-header {
-    font-size: 200%;
-    color: #B8DBD9;
-    text-align: center;
-    margin: 0;
-    text-decoration: none;
-    display: inline;
-}
-
-header #menu-accordeon li ul li {
-    display: inline-block;
-    margin-right: 1%;
-    margin-bottom: 1%;
-    padding: 2px;
-    border: 1px solid #B8DBD9;
-    background-color: #F4F4F9;
-}
-
-header #menu-accordeon>li {
-    display: inline;
-}
-
 h1 {
     font-size: 400%;
     padding-left: 10%;
     text-decoration: underline overline #D00076;
 }
+
+/* Sélecteurs concernant l'index */
 
 .images {
     border: 5px solid #D00076;
@@ -67,6 +32,8 @@ h1 {
     width: 400px;
     height: 400px;
 }
+
+/* Sélecteurs concernant le menu */
 
 .menu section {
     position: relative;
@@ -116,6 +83,8 @@ dd {
     margin-bottom: 1%;
 }
 
+/* Sélecteurs concernant le règlement */
+
 .nomRegle {
     font-size: large;
     font-style: italic;
@@ -125,9 +94,7 @@ ol {
     background-color: rgba(208, 0, 118, 0.2)
 }
 
-footer {
-    background-color: rgb(208, 0, 118);
-}
+/* Sélecteurs concernant les avis */
 
 .avisClients {
     background-color: rgba(208, 0, 118, 0.2)
@@ -179,4 +146,46 @@ textarea {
 
 textarea {
     display: block;
+}
+
+/* Sélecteurs concernant le header */
+
+header {
+    background-color: #D00076;
+    color: #B8DBD9;
+    list-style-type: none;
+}
+
+header img {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+header nav #titre-header {
+    font-size: 200%;
+    color: #B8DBD9;
+    text-align: center;
+    margin: 0;
+    text-decoration: none;
+    display: inline;
+}
+
+header #menu-accordeon li ul li {
+    display: inline-block;
+    margin-right: 1%;
+    margin-bottom: 1%;
+    padding: 2px;
+    border: 1px solid #B8DBD9;
+    background-color: #F4F4F9;
+}
+
+header #menu-accordeon>li {
+    display: inline;
+}
+
+/* Sélecteurs concernant le footer */
+
+footer {
+    background-color: rgb(208, 0, 118);
 }
