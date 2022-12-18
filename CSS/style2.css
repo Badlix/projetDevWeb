@@ -61,7 +61,6 @@ h1 {
 .menu .nomProduit {
     display: inline-block;
     padding-right: 1%;
-    text-shadow: #545153;
     top: 0;
 }
 
@@ -118,7 +117,7 @@ form {
 }
 
 textarea {
-    resize: auto;
+    resize: both;
     max-height: 100px;
     max-width: 40%;
 }
