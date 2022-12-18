@@ -4,11 +4,15 @@
 <head>
     <title>~ Mon Café Français ~</title>
     <meta charset="utf-8" />
-    <link rel="stylesheet" href="CSS/style1.css">
+    <link id="pagestyle" rel="stylesheet" href="CSS/style1.css">
     <link rel="icon" href="assets/icons/favicon.ico">
+    <meta name="description"
+        content="Page d'accueil du site internet de Mon Café Français. Un menu déroulant permet de naviguer parmis les différentes pages qui composent le site, et plusieurs images montrent un extrait de notre cuisine alléchante...">
 </head>
 
 <body>
+
+    <!-- HEADER  -->
     <header>
         <nav>
             <a href="index.html"><img src="assets/icons/home.svg" width="25" height="25"></a>
@@ -25,6 +29,8 @@
             </ul>
         </nav>
     </header>
+    <!-- HEADER  -->
+
     <h1>
         Mon Café Français
     </h1>
@@ -50,8 +56,20 @@
             </td>
         </tr>
     </table>
+
+    <!-- FOOTER  -->
     <footer>
         <a href="#top" class="img-footer"><img src="assets/icons/up-arrow.svg" width="30" height="30"></a>
         <p id="contact">Nous Contacter : moncafefrancais.avis@gmail.com</p>
+        <p id="buttons">
+            <button id="button1" onclick="switchTo('CSS/style1.css')">Style 1</button>
+            <button id="button2" onclick="switchTo('CSS/style2.css')">Style 2</button>
+        </p>
+        <script>
+            function switchTo(sheet) {
+                document.getElementById('pagestyle').setAttribute('href', sheet);
+            }
+        </script>
     </footer>
+    <!-- FOOTER  -->
 </body>

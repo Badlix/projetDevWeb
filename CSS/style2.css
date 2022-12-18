@@ -33,6 +33,10 @@ header nav h1 {
     text-decoration: none;
 }
 
+header #menu-accordeon>li {
+    display: inline;
+}
+
 h1 {
     font-size: 400%;
     padding-left: 10%;
