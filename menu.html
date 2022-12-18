@@ -120,5 +120,10 @@
             <button id="button1" onclick="switchTo('CSS/style1.css')">Style 1</button>
             <button id="button2" onclick="switchTo('CSS/style2.css')">Style 2</button>
         </p>
+        <script>
+            function switchTo(sheet) {
+                document.getElementById('pagestyle').setAttribute('href', sheet);
+            }
+        </script>
     </footer>
 </body>
