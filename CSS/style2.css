@@ -21,13 +21,22 @@ header img {
     height: 0;
 }
 
-header nav h1 {
+header nav #titre-header {
     font-size: 200%;
     color: #B8DBD9;
     text-align: center;
     margin: 0;
-    padding-bottom: 20px;
     text-decoration: none;
+    display: inline;
+}
+
+header #menu-accordeon li ul li {
+    display: inline-block;
+    margin-right: 3%;
+    margin-bottom: 1%;
+    padding: 1%;
+    border: 1px solid #B8DBD9;
+    background-color: #F4F4F9;
 }
 
 header #menu-accordeon>li {
@@ -145,4 +154,29 @@ textarea {
     resize: auto;
     max-height: 100px;
     max-width: 40%;
+}
+
+#pageAvis h2 {
+    background-color: rgba(208, 0, 118, 0.2);
+    width: fit-content;
+    text-decoration: underline;
+}
+
+#form {
+    background-color: rgba(208, 0, 118, 0.2);
+    width: fit-content;
+    margin-top: 2%;
+    padding: 1%;
+}
+
+textarea {
+    width: 60em;
+}
+
+#form>* {
+    margin: 1%;
+}
+
+textarea {
+    display: block;
 }
