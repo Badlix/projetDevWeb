@@ -67,6 +67,8 @@ h1 {
     writing-mode: vertical-rl;
     text-orientation: upright;
     position: absolute;
+    background-color: #B8DBD9;
+    color: #586F7C;
 }
 
 .menu dl {
@@ -77,18 +79,13 @@ h1 {
     font-size: 150%;
 }
 
-.menu .nomProduit {
-    font-family: 'Great Vibes', cursive;
-    font-size: 170%;
-}
 
 dt {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: inline;
+
 }
 
-dd {
+/* dd {
     margin-top: -20px;
     margin-bottom: 1%;
 }   
