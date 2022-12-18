@@ -27,7 +27,7 @@
     <h2>
         Laissez nous un avis !
     </h2>
-    <form id="form" action="" method="post" enctype="text/plain">
+    <!-- <form id="form" action="#" onsubmit="sendEmail()" method="post" enctype="text/plain">
         <p class="score">
             <input type="radio" name="score" id="score-1">
             <label for="score-1"></label>
@@ -46,8 +46,23 @@
         <input id="nom" type="text" name="nom" value="">
         <textarea name="commentaire" rows="3" cols="60" placeholder="Laissez nous un commentaire !"
             id="commentaire"></textarea>
-        <input type="submit" value="Enregistrer" onclick="sendEmail()">
+        <input type="submit" value="Envoyer">
     </form>
+    <a href="mailto:alice.leroux@gmail.com">jgkvvaeferf</a> -->
+    <div id="formulairecontact">
+        <form action="#" onsubmit="temp()" method="post" enctype="text/plain" id="form1">
+            <p>
+                <label for="nom">Prénom et nom: </label><span class="required">*</span>
+                <input type="text" id="name" name="Prénom & NOM" value="" placeholder="Prénom & Nom" required="required"
+                    autofocus="autofocus" />
+                <br />
+                <label for="message">Message: <span class="required">*</span></label>
+                <textarea id="message" name="Message" placeholder="Votre message doit faire plus de 20 caractères..."
+                    required="required" data-minlength="1"></textarea>
+            </p>
+            <input type="submit" value="Envoyer">
+        </form>
+    </div>
     <h2>
         Avis de nos clients...
     </h2>
