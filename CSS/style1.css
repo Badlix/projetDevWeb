@@ -159,7 +159,7 @@ header nav h1 {
     padding: 8px;
 }
 
-#menu-accordeon li:hover li {
+#menu-accordeon li:active li {
     max-height: 15em;
 }
 
@@ -171,6 +171,7 @@ header nav h1 {
 .lien-deroulant {
     padding-left: 10px;
     padding-right: 10px;
+    font-size: 125%;
 }
 
 footer {
@@ -280,7 +281,7 @@ figcaption {
         font-size: 250%;
     }
 
-    #menu-accordeon .lien-deroulant {
-        height: 100px;
+    .lien-deroulant {
+        font-size: 200%;
     }
 }
