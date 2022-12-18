@@ -5,7 +5,7 @@ body {
     background-repeat: no-repeat;
     background-color: rgb(200, 219, 190);
     background-size: cover;
-    font-size: 70%;
+    font-size: 100%;
 }
 
 h1 {
@@ -271,8 +271,12 @@ figcaption {
 }
 
 /* Pour quand on est sur mobile*/
-@media only screen and (hover: none) and (pointer: coarse) {
+@media only screen and (max-device-width : 700px) {
     .menu .descProduit {
-        font-size: 65%;
+        font-size: 60%;
+    }
+
+    .menu .nomProduit {
+        font-size: 250%;
     }
 }
