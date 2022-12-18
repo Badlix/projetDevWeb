@@ -41,16 +41,12 @@
             <label for="score-5"></label>
         </p>
         <label for="prenom">Prénom :</label>
-        <input id="prenom" type="text" name="prenom" value=" ">
+        <input id="prenom" type="text" name="prenom" value="">
         <label for="nom">Nom :</label>
-        <input id="nom" type="text" name="nom" value=" ">
-        <select name="sexe">
-            <option>homme</option>
-            <option>femme</option>
-            <option>autre</option>
-        </select>
-        <textarea name="commentaire" rows="3" cols="60" placeholder="Laissez nous un commentaire !"></textarea>
-        <input type="submit" value="Enregistrer">
+        <input id="nom" type="text" name="nom" value="">
+        <textarea name="commentaire" rows="3" cols="60" placeholder="Laissez nous un commentaire !"
+            id="commentaire"></textarea>
+        <input type="submit" value="Enregistrer" onclick="sendEmail()">
     </form>
     <h2>
         Avis de nos clients...
