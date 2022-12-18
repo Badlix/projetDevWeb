@@ -226,7 +226,7 @@ header img {
     padding-left: 2%;
 }
 
-header nav h1 {
+header nav #titre-header {
     font-size: 175%;
     display: inline-block;
     vertical-align: middle;
