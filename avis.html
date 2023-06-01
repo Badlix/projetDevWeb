@@ -77,7 +77,7 @@
             sujet = "Avis : " + form.prenom.value + " " + form.nom.value;
             texte = form.commentaire.value;
             note = "Note " + getNote(form) + "/5" + sautligne + sautligne;
-            complet = "mailto:moncafefrancais.avis@gmail.com?subject=" + sujet + "&body=" + note + texte;
+            complet = "mailto:moncafefrancais@serveurDBG.org?subject=" + sujet + "&body=" + note + texte;
             document.getElementById("jsp").href = complet;
         }
     </script>
